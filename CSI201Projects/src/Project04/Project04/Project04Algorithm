@@ -1,0 +1,40 @@
+Summary of Program: This program passes array of 4 student test score values and displays there letter grade and the average. It utilizes a switch statement that allows the user to send to the screen, send to a file and quit the program.
+Main Method Algorithm
+
+Summary: In this method, the user has the choice of sending output to screen, file and quitting . This is done by switch statement and do-while loop and the methods are called inside the main method to produce grade report. 
+1. Declare variables and imports needed for program.
+2. Asks user what choice they want the program to do and if they want to send it to a screen, file or quit
+3. Choice 1 sends the program to a screen.
+4. Reads the user test score input and creates an array by using a for loop to store user values in 4 index places for test 1.
+5. Reads the user test score input and creates an array by using a for loop to store user values in 4 index places for test 2.
+6. Calls the methods of average and lettergrade
+7. Displays the test 1 scores, test 2 scores, average score and the letter grade with proper decimal formatting
+8. Choice 2 displays the output to the screen and sends information to a file
+9. Utilizes same repeated steps of reading the user test score input and creates an array by using a for loop to store user values in 4 index places for test 1.
+10. Utilizes same repeated steps of reading the user test score input and creates an array by using a for loop to store user values in 4 index places for test 2.
+11. Calls the average and lettergrade method.
+12. Displays the test 1 scores, test 2 scores, average score and the letter grade with proper decimal formatting.
+13. Reads the file name the user wants to send the information to.
+14. See if file exists or not.
+15. Open the file the user wants to write to
+16. Get data and write it to the file.
+17. Close the file
+18. Choice 3 is exit the program. 
+19. Uses a do-while loop to execute the program as long as the user doesn't enter the choice 3 which exits the program.
+
+Average Method Algorithm
+Summary: This method uses the two test 1 and test 2 arrays and calculates the average and returns the average value. 
+1. Create method that has test 1 and test 2 array in parameter of method header. 
+2. Creates a double average array that is the length of test 1 array of 4 index places
+3. Creates a for loop to execute the average value for each value in array
+4. Returns the average value
+
+Lettergrade Method Algorithm 
+Summary: This method uses the average value from another method as a parameter and assigns a letter grade to the value and return a grade value. 
+1. Uses the average array as a parameter to assign letter grade.
+2. Creates a grade array that is the length of average array.
+3. Creates a for loop the size of average array length to assign a letter grade based on average. 
+4. Returns the grade value.
+
+							     
+				

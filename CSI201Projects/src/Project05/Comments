@@ -1,0 +1,279 @@
+			   				//.getarea();
+			   				
+			   				//Shape s= shapes.get(i);
+			   				//System.out.println(s.getArea());
+			   			
+			  // tokenizer = new StringTokenizer(lineFromFile, "()+-*/ ", true);
+				
+				//while(tokenizer.hasMoreTokens()){
+					
+					//System.out.print(tokenizer.nextToken() + " ");
+	
+					
+					
+				
+				//Rectangle tokenizer1= new Rectangle();
+			//	tokenizer1.getName(line);
+				//System.out.print(tokenizer1);
+			   
+			   
+			//+input.getNam e());
+			
+			//else if (lineFromFile.contains("Circle")) {
+				   //System.out.println("I found " +"Circle"+ " in file " );
+				   
+				//+input.getName());
+				
+			//else if (lineFromFile.contains("Triangle")) {
+				  // System.out.println("I found " +"Triangle"+ " in file " );
+		//}
+	//}
+	
+
+//}
+//}
+
+//				
+//				for(int i=0; i<names.length; i++) {
+//					// name[i] = myReader.split(" ")[0];
+//					 lineSplit = lineFromFile.split("\\s+");
+//	                 names[i] = lineSplit[3];
+//	                 numbr[i] = Integer.parseInt(lineSplit[3]);
+//	 					System.out.println(numbr[i]);
+//
+//				}
+//					//System.out.println(f[i])
+//			    name = myReader.next();
+//			    width = myReader.nextInt();
+//			    length = myReader.nextInt();
+//				}
+//			   // pageFault = input.next();
+//
+//			    Shape record = new Rectangle(length, width, name);
+//			    shapes.add(record);
+//				System.out.println(shapes.add(record));
+//				
+//			}// <-- this is your original code
+	
+//			String names[] = new String[10];
+//			int numbr[] = new int[10];
+//			    for(int i = 0; i<names.length;  i++){
+//			        String line = reader.readLine();
+//			        if(line != null){
+//			            names[i] = line.split(" ")[0];
+//			            numbr[i] = Integer.parseInt(line.split(" ")[1]);
+//
+//			        }
+		
+//		      while (myReader.hasNextLine()) {
+//		    	  String data = myReader.nextLine();
+//		    	  for line in myReader.readlines():
+//		    		    if line[0] == username:
+//		    	  if (myReader.equalsIgnoreCase("Rectangle")) {
+//	    			  for(int i=0; i<3; i++) {
+//	    				  double Shape f[]= {
+//	    						  new Rectangle= 
+//	    				  };
+//		    				System.out.println(f[i]);
+//		    				Rectangle Rectangle=new Rectangle();
+//		      }
+		    		  
+		    //	  }
+		    			  
+		    			 	        
+		        		
+		       // System.out.println(data);
+		      
+		     // } myReader.close();
+		     // }
+		   //   catch (FileNotFoundException e) {
+		   //   System.out.println("An error occurred.");
+		      //e.printStackTrace();
+		  //  }
+		
+		 
+
+		
+		
+//		//public static void main(String[]args) {
+
+
+
+//            
+//            Triangle triangle = new Triangle();// bool, name, side1, side2, side3
+//            System.out.println(triangle);
+//            
+//        }
+//        br.close();
+//            String line = input.nextLine();
+//            String[] tokens = line.split("\n");
+//            if (tokens[1].equals("Circle")) {
+//                Circle c = new Circle();
+//                float radius = Float.parseFloat(tokens[1]);
+//                c.setRadius(radius);
+//                String color = String.valueOf(tokens[2]);
+//                c.setName(color);
+//               // Boolean filled = Boolean.valueOf(tokens[3]);
+//                c.getArea();
+//              //  c.getArea();
+//                list.add(c);
+//                System.out.println(c.toString());
+//            } else if (tokens[1].equals("Rectangle")) {
+//                Rectangle r = new Rectangle();
+//                float length = Integer.parseInt(tokens[1]);
+//                r.setlength(length);
+//                float width = Integer.parseInt(tokens[2]);
+//                r.setwidth(width);
+//                String name = String.valueOf(tokens[3]);
+//                r.setName(name);
+//               // Boolean filled = Boolean.valueOf(tokens[4]);
+//               // r.setFilled(filled);
+//                r.getArea();
+//                list.add(r);
+//                System.out.println(r.toString());
+//            }
+//
+//        }
+
+   // }
+
+//}
+		
+//		String name = null;
+//        int width = 0, length = 0;
+//        //i//nt length;
+//       // String pageFault;
+//        
+//File input = new File("/Users/jahnavibonagiri/eclipse-workspace2/CSI201Projects/src/Project05/Shapes.txt");
+//Scanner line = new Scanner(input);
+////System.out.println(input);
+//////		      File file = new File("/Users/jahnavibonagiri/eclipse-workspace2/CSI201Projects/src/Project05/Shapes.txt");
+//////		      BufferedReader br = new BufferedReader(new FileReader(file));
+////		  
+////		    //  }
+////		//}
+////		
+//		ArrayList<Shape> shapes= new ArrayList<Shape>();
+////
+
+       // java.io.File file = new java.io.File("prog6.dat");
+       // Scanner fin = new Scanner(file);
+//
+//    	File file = new File("/Users/jahnavibonagiri/eclipse-workspace2/CSI201Projects/src/Project05/Shapes.txt");
+//		Scanner br = new Scanner(file);
+//		
+//        while (br.hasNext()) {
+//        	final String lineFromFile =br.nextLine();
+//        	//.out.println(br);
+//            
+//        	boolean filled;
+//        	String bool = br.next();
+//        	if(bool.equals("Triangle"))
+//   
+
+        try {
+        	String lineSplit[] = new String[3]; 
+        	File file = new File("/Users/jahnavibonagiri/eclipse-workspace2/CSI201Projects/src/Project05/Shapes.txt");
+    		//Scanner br = new Scanner(file);
+        	BufferedReader br = new BufferedReader(new FileReader(file));
+   
+            while (br.hasNextLine()) {
+            	final String lineFromFile =br.nextLine();
+              //String data =  br.nextLine();
+              if (br.contains("Rectangle")) {
+   			   System.out.println("I found " +"Rectangle"+ " in file " );
+   			   //String[] arrOfStr = lineSplit.split("/n");
+   			   for (String a : arrOfStr)
+//   			for(int i=0; i<3; i++)
+   		            System.out.println(a);
+              System.out.println(data);
+            }
+            br.close();
+            }
+          } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+          }
+        
+        
+             filled = true;
+        	else 
+        		filled= false;
+            String name = br.nextLine();
+            double side1 = br.nextDouble();
+            double side2 = br.nextDouble();
+            double side3 = br.nextDouble();
+
+		String names[] = new String[3];
+		int numbr[] = new int[3];
+        String lineSplit[] = new String[3]; 
+        StringTokenizer tokenizer;
+        String box1;
+		while(line.hasNextLine()) { 
+			final String lineFromFile =line.nextLine();
+			if (lineFromFile.contains("Rectangle")) {
+			   //System.out.println("I found " +"Rectangle"+ " in file " );
+			   String[] arrOfStr = lineFromFile.split("/n");
+			   for (String a : arrOfStr)
+			//for(int i=0; i<3; i++)
+		            System.out.println(a);
+			   		String[] arrOfStr1 = lineFromFile.split("/n");
+			   		Rectangle box11= new Rectangle();
+	   				System.out.print(box11);
+			   			for (int i=0;i<2; i++) {
+			   			
+			   			//	publicIllegalTriangleException extends Triangle(double sideOne, double sideTwo, double sideThree) throws Exception {
+//		
+//	if(sideOne >= (sideTwo+sideThree) || sideOne >= (sideTwo+sideThree) || sideTwo >= (sideOne+sideThree)) {
+//					 System.out.println("Not a Triangle");
+//				}
+//	}
+//}
+	
+	
+//	public Triangle(double side1, double side2, double side3) throws InvalidTriangleException{
+//		 try{
+////			 if(side1 >= (side2+side3) || side3 >= (side1+side2) || side2 >= (side1+side3)) {
+////				 System.out.println("Not a Triangle");
+//				 
+//			}
+//		 else
+//			 throw new InvalidTriangleException("Any two sides needs to be grater than the other side");
+//		}catch (InvalidTriangleException ex){
+//			ex.printStackTrace();
+//			
+//		 // Handle InvalidTriangelException
+//		}catch (Exception ex) {
+//			ex.printStackTrace();
+//		}finally {
+//			System.out.println("Not a Triangle");
+//		}
+//	}
+//Circle 
+Fifteen
+16.0
+Triangle
+World
+5.0
+12.0
+13.0
+Circle
+5.0
+Triangle
+Dog
+7.0
+24.0
+25.0
+Rectangle
+Square 2 
+2.0
+3.0
+Rectangle
+Phone
+10.0
+10.0
+Circle
+Earth
+9.0
+//
+//

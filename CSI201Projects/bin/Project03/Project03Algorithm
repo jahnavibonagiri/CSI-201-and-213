@@ -1,0 +1,21 @@
+Jahnavi Bonagiri Project 03 Algorithm
+Summary: This program reads input of two different dates and uses mathematical operations and decision structure to calculate the date difference.
+1. Declare variables in the beginning of program.
+2. Reads the first month as string.
+3. Reads the first year date as a double.
+4. Reads the second month as a string.
+5. Reads the second year date as a double.
+6. Uses if and else if statements to assign a integer number to the first string month.
+7. Uses if and else if statements to assign a integer number to the second string month.
+8. If first year is greater than or equal to the second year, there will be a subset of decision structures to follow. 
+9. If first year is greater than or equal to second year and month 1 is greater than or equal to second month, calculate the month difference and year difference. 
+10. If first year is greater than or equal to second year and month 1 is less than second month, calculate the month difference and year difference.
+11. If first year less than the second year, there will be a subset of decision structures to follow. 
+12. If first year less than second year and month 1 greater than second month, calculate the month difference and year difference. 
+13. Add +=12 to month difference to make the month difference non-negative
+14. Subtract 1 from yearsdifference to calculate the correct difference.
+15. If first year less than second year and month 1 less than second month, calculate the month difference and year difference. 
+16. Display the difference between the two dates. 
+
+
+

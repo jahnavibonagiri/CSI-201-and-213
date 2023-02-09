@@ -1,0 +1,39 @@
+Jahnavi Bonagiri Algorithm for Project02
+Summary: This program reads various inputs from the reader regarding name, cost, length and width of carpet. Using the information, the program calculates the final cost of the carpet including cost with tax and displays the output to the user.
+1. Declare all variables in the beginning of code.
+2. Reads first name from user.
+3. Reads last name from user.
+4. Reads length of carpet.
+5. Reads width of carpet.
+6. Reads the cost of carpet per square foot.
+7. Calculates the area by multiplying the width and length of carpet.
+8. Calculates the cost by multiplying the area and the cost of carpet per square foot.
+9. Calculates the tax cost by multiplying the cost of carpet by the tax.
+10. Calculates the total cost by adding the tax cost and the cost of the carpet.
+11. Format all the variables according to their proper formatting rules.
+12. Take the first name from user and separate the first letter.
+13. Have the remaining letters stored in another variable as well.
+14. Capitalize the first letter of first name.
+15. Lower case the remaining letters.	
+16. Combine the first capitalized letter with the remaining lower cased letters of the first name and store it in variable. 	
+17. Repeat the same steps with the last name. Take the last name from user and separate the first letter. 
+18. Have the remaining letters stored in another variable as well.
+19. Capitalize the first letter of last name.
+20. Lower case the remaining letters of last name.
+21. Combine the first capitalized letter with the remaining lower cased letters of the last name and store it in variable.  
+22. Get the concatenated combined name by using the first name capitalized letter and the lower cased last name with five characters.
+23. Get a random value from 10-99 inclusive for the customer ID by using random generator.
+25. Display the last name.
+26. Display the first name.
+27. Display the customer ID. 
+28. Display the measurement values. 
+29. Display the length.
+30. Display the width.
+31. Display the area of carpet. 
+32. Display the charges values.
+33. Display the cost of carpet per square foot.
+34. Display the cost of carpet with the area multiplied.
+35. Display the tax.
+36. Display the tax cost of carpet
+37. Display the total carpet cost with tax cost added.
+		
