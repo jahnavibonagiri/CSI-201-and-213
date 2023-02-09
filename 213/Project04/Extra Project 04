@@ -1,0 +1,398 @@
+package Project04;
+import java.util.Scanner;
+
+public class ADTAddressBook {
+	
+
+	    Scanner s = new Scanner(System.in);
+
+	    //Nested class for each entry
+
+	    class Entry{
+
+	        private String first;
+
+	        private String last;
+
+	        private String address;
+
+	        private String street;
+
+	        private String city;
+
+	        private String state;
+
+	        private String zipcode;
+
+	        private String telnumber;
+
+	        Entry(String first, String last, String address, String street, String city, String state, String zipcode ,String telnumber){
+
+	            this.first = first;
+
+	            this.last = last;
+
+	            this.address = address;
+
+	            this.street = street;
+
+	            this.city = city;
+
+	            this.state = state;
+
+	            this.zipcode = zipcode;
+
+	            this.telnumber = telnumber;
+
+	        }
+
+	        Entry(){
+
+	            first = "";
+
+	            last = "";
+
+	            address = "";
+
+	            street = "";
+
+	            city = "";
+
+	            state = "";
+
+	            zipcode = "";
+
+	            telnumber = "";
+
+	          
+
+	        }
+
+	        public void readEntry(){
+
+	            System.out.println("First Name:"+first );
+
+	            System.out.println("Last Name:"+last );
+
+	            System.out.println("Address:"+address );
+
+	            System.out.println("Street:"+street );
+
+	            System.out.println("City:"+city );
+
+	           System.out.println("State:"+state );
+
+	            System.out.println("Zipcode:"+zipcode );
+
+	           System.out.println("Telnumber:"+telnumber );
+
+	        }
+
+	    }
+
+	    //Keeps track of how many entries are in the book
+
+	    private int entries = 0;
+
+	    Entry[] contents;
+
+	    public void initEntries(int e){
+
+	        contents = new Entry[e];
+
+	        for (int i = 0;i<contents.length;i++){      //Initializes an array of entries, then loops through to initialize each individual entry
+
+	            contents[i] = new Entry();
+
+	        }
+
+	    }
+
+	    public int getEntries(){
+
+	        return contents.length;
+
+	    }
+
+	    //Adds an entry to the book
+
+	    public void add(String first, String last, String address, String street, String city, String state, String zipcode, String telnumber){
+
+	        if (entries<contents.length){
+
+	        contents[entries] = new Entry(first, last, address, street, city, state, zipcode, telnumber);
+
+	        entries++;
+
+	        }
+
+	        else System.out.println("Error: addressbook is full");
+
+	    }
+
+	    //Removes an entry from the book
+
+	    public void remove(int entry){
+
+	        if (entries>0){
+
+	            contents[entry] = new Entry();
+
+	            for (int i = 0;i<entries-entry;i++){
+
+	                if (entry+1==entries) contents[entry] = new Entry();
+
+	                else{
+
+	                    Entry temp = contents[entry+i];
+
+	                    contents[entry+i] = contents[entry+i+1]; //Removes an entry end moves each entry after it one backwards.
+
+	                    contents[entry+i+1] = temp;
+
+	                }
+
+	            }
+
+	            entries--;
+
+	            }
+
+	            else System.out.println("Error: addressbook is empty.");
+
+	    }
+
+	    //Changes the values of an entry
+
+	    public void edit(String first, String last, String address, String street, String city, String state, String zipcode, String telnumber,  int selection){
+
+	        contents[selection].first = first;
+
+	        contents[selection].last = last;
+
+	        contents[selection].address = address;
+
+	        contents[selection].street = street;
+
+	        contents[selection].city = city;
+
+	        contents[selection].state = state;
+
+	        contents[selection].zipcode = zipcode;
+
+	        contents[selection].telnumber = telnumber;
+
+	    }
+
+
+	    //Sorts the book based on a part of the entry
+
+	  //int n is used to tell which part of the entries to base the sort on
+
+	    public void sort(int n){
+
+	        for(int i = 0;i<contents.length;i++){
+
+	            for (int j = 0;j<contents.length;j++){
+
+	                switch(n){
+
+	                    case 1:
+
+	                        if (contents[i].first.compareTo(contents[j].first)<0){
+
+	                            Entry temp = contents[i];
+
+	                            contents[i] = contents[j];
+
+	                            contents[j] = temp;
+
+	                       }
+
+	                        break;
+
+	                    case 2:
+
+	                        if (contents[i].last.compareTo(contents[j].last)<0){
+
+	                            Entry temp = contents[i];
+
+	                            contents[i] = contents[j];
+
+	                            contents[j] = temp;
+
+	                        }
+
+	                        break;
+
+	                    case 3:
+
+	                        if (contents[i].address.compareTo(contents[j].address)<0){
+
+	                            Entry temp = contents[i];
+
+	                            contents[i] = contents[j];
+
+	                            contents[j] = temp;
+
+	                        }
+
+	                        break;
+
+	                    case 4:
+
+	                        if (contents[i].street.compareTo(contents[j].street)<0){
+
+	                            Entry temp = contents[i];
+
+	                            contents[i] = contents[j];
+
+	                            contents[j] = temp;
+
+	                        }
+
+	                        break;
+
+	                    case 5:
+
+	                        if (contents[i].city.compareTo(contents[j].city)<0){
+
+	                            Entry temp = contents[i];
+
+	                            contents[i] = contents[j];
+
+	                            contents[j] = temp;
+
+	                        }
+
+	                        break;
+
+	                           case 6:
+
+	                        if (contents[i].state.compareTo(contents[j].state)<0){
+
+	                            Entry temp = contents[i];
+
+	                            contents[i] = contents[j];
+
+	                            contents[j] = temp;
+
+	                        }
+
+	                        break;
+
+	                        case 7:
+
+	                   if (contents[i].zipcode.compareTo(contents[j].zipcode)<0){
+
+	                            Entry temp = contents[i];
+
+	                            contents[i] = contents[j];
+
+	                            contents[j] = temp;
+
+	                        }
+
+	                        break;
+
+	               case 8:
+
+	            if (contents[i].telnumber.compareTo(contents[j].telnumber)<0){
+
+	                            Entry temp = contents[i];
+
+	                            contents[i] = contents[j];
+
+	                            contents[j] = temp;
+
+	                        }
+
+	                        break;
+
+	                    default:
+
+	                        System.out.println("Error: invalid field");
+
+	                        break;
+
+	                }
+
+	            }
+
+	             }
+
+	                         
+
+	    }
+
+	    public void addFromCopy(Entry e){
+
+	        if (entries<contents.length){
+
+	            contents[entries] = e;
+
+	            entries++;
+
+	            }
+
+	            else System.out.println("Error: book is full");
+
+	     } 
+	  
+	    }
+	    
+	    	        
+//	    /**
+//	     * Address constructor
+//	     * 
+//	     * @param street Stree name
+//	     * @param city city name
+//	     * @param state state name
+//	     * @param zipcode zip code
+//	     */
+//	        public  Address(String street, String city, String state, int zipcode) {
+//	                this.street = street;
+//	                this.city = city;
+//	                this.state = state;
+//	                this.zipcode = zipcode;
+//	        }
+//
+//	    public String getCity() {
+//	        return city;
+//	    }
+//
+//	    public String getStreet() {
+//	        return street;
+//	    }
+//
+//	    public String getState() {
+//	        return state;
+//	    }
+//
+//	    public int getZipcode() {
+//	        return zipcode;
+//	    }
+//
+//	    public void setCity(String city) {
+//	        this.city = city;
+//	    }
+//
+//	    public void setStreet(String street) {
+//	        this.street = street;
+//	    }
+//
+//	    public void setState(String state) {
+//	        this.state = state;
+//	    }
+//
+//	    public void setZipcode(int zipcode) {
+//	        this.zipcode = zipcode;
+//	    }
+//	}
+//
+//
+//
+//
+
+
+
